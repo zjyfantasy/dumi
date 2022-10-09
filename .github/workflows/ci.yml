@@ -27,6 +27,8 @@ jobs:
       - name: Build Project
         run: |
           npm install
+          git config --global user.email "zhongjinyan@biad.com.cn"
+          git config --global user.name "zhongjinyan"
           npm run deploy
 
       # 部署到github
